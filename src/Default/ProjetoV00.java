@@ -9,6 +9,8 @@ public class ProjetoV00 {
 		MenuV1 menuComida = new MenuV1();
 		
 		System.out.println(menuComida);
+		
+		System.out.println("Pai ta onn");
 	}
 
 }
