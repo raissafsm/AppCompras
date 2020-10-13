@@ -52,11 +52,24 @@ public class Produtos {
 	// de catalogo interno em um vetor com nomes dos ingredientes
 	// que será impresso na tela do usuário.
 	public static void prato (int resp2){
-		String[] lista = new String[10];
+		int ingredientes = 0;
 
 		switch(resp2){
 			case 1:
-				// alguma coisa/lógica para encher um vetor de Strings
+				// Checa quantos ingredientes em cada pacote(matriz)
+				for(int i = 0; i < 3; i++){
+					for(int j = 0; j < 7; j++){
+						if(tabule[i][j] != 0){
+							ingredientes++;
+						}
+					}
+				}
+
+				// Cria vetor com tamanho igual a quantidade de ingredientes
+				// Substitui código por nome de ingrediente e atribui nome ao vetor itens
+				String[] itens = new String[ingredientes];
+				
+
 				break;
 			case 2:
 				// alguma coisa/lógica para encher um vetor de Strings
