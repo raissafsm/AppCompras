@@ -7,10 +7,9 @@ public class ProjetoV00 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		MenuV1 menuComida = new MenuV1();
-		
-		System.out.println(menuComida);
-		
+				
 		System.out.println("Pai ta onn");
+		System.out.println(MenuV1.sopa);
 	}
 
 }
