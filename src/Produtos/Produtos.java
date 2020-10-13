@@ -1,7 +1,34 @@
 package Produtos;
 
 public class Produtos {
+/* 
+ * trigo para quibe (triguilho)	= 1
+ * folha de salsa		= 2
+ * folha de hotelã		= 3
+ * cebola			= 4
+ * tomate			= 5
+ * pepino			= 6
+ * cebolinha			= 7
+ * limão			= 8
+ * azeite			= 9
+ * rabanete			= 10
+ * pepino japonês		= 11
+ * alface			= 12
+ * sal				= 13
+ * pimenta			= 14
+ * torrada (pão)		= 15
+ * carne de carneiro		= 16
+ * coalhada			= 17
+ * alho				= 18
+ * agua				= 19
+ * arroz			= 20
+ * manteiga			= 21
+ * carne patinho		= 22
+ * pimenta síria		= 23
+ */
 
+	// Mtartizes com cada um dos produto em "pacotes"
+	// separados por tipo (ao lado de cada linha).
 	public static int tabule[][] = {
 		{1, 0, 0, 0, 0, 0, 0},		//carboidratos
 		{2, 3, 4, 5, 6, 7, 0},		//horaliças, legumes e verduras
@@ -20,244 +47,22 @@ public class Produtos {
 		{16, 17, 21, 22, 0, 0, 0}	//proteínas
 	};
 	
-	public static void prato (int escolha){
+	// Função que recebe opções de escolha do menu e transforma matrizes
+	// de catalogo interno em um vetor com nomes dos ingredientes
+	// que será impresso na tela do usuário.
+	public static void prato (int resp2){
 		String[] lista = new String[10];
 
-		switch(escolha){
+		switch(resp2){
 			case 1:
-				for(int i = 0; i < 3; i++){
-					for(int j = 0; j < 7; i++){
-						if(tabule[i][j] == 1){
-							lista[i+j] = "trigo para quibe";
-						}
-						else if(tabule[i][j] == 2){
-							lista[i+j] = "salsa";
-						}
-						else if(tabule[i][j] == 3){
-							lista[i+j] = "hortelã";
-						}
-						else if(tabule[i][j] == 4){
-							lista[i+j] = "cebola";
-						}
-						else if(tabule[i][j] == 5){
-							lista[i+j] = "tomate";
-						}
-						else if(tabule[i][j] == 6){
-							lista[i+j] = "pepino";
-						}
-						else if(tabule[i][j] == 7){
-							lista[i+j] = "cebolinha";
-						}
-						else if(tabule[i][j] == 8){
-							lista[i+j] = "limão";
-						}
-						else if(tabule[i][j] == 9){
-							lista[i+j] = "azeite";
-						}
-						else if(tabule[i][j] == 10){
-							lista[i+j] = "rabanete";
-						}
-						else if(tabule[i][j] == 11){
-							lista[i+j] = "pepino japonês";
-						}
-						else if(tabule[i][j] == 12){
-							lista[i+j] = "alface";
-						}
-						else if(tabule[i][j] == 13){
-							lista[i+j] = "sal";
-						}
-						else if(tabule[i][j] == 14){
-							lista[i+j] = "pimenta";
-						}
-						else if(tabule[i][j] == 15){
-							lista[i+j] = "torradas";
-						}
-						else if(tabule[i][j] == 16){
-							lista[i+j] = "carne de carneiro";
-						}
-						else if(tabule[i][j] == 17){
-							lista[i+j] = "coalhada";
-						}
-						else if(tabule[i][j] == 18){
-							lista[i+j] = "alho";
-						}
-						else if(tabule[i][j] == 19){
-							lista[i+j] = "água";
-						}
-						else if(tabule[i][j] == 20){
-							lista[i+j] = "arroz";
-						}
-						else if(tabule[i][j] == 21){
-							lista[i+j] = "manteiga";
-						}
-						else if(tabule[i][j] == 22){
-							lista[i+j] = "carne de patinho";
-						}
-						else if(tabule[i][j] == 23){
-							lista[i+j] = "pimenta síria";
-						}
-					}
-				}
-			for(int i=0; i < lista.length; i++){
-				System.out.print(lista[i]);
-			}
-			break;
+				// alguma coisa/lógica para encher um vetor de Strings
+				break;
 			case 2:
-				for(int i = 0; i < 3; i++){
-					for(int j = 0; j < 7; i++){
-						if(fatouche[i][j] == 1){
-							lista[i+j] = "trigo para quibe";
-						}
-						else if(fatouche[i][j] == 2){
-							lista[i+j] = "salsa";
-						}
-						else if(fatouche[i][j] == 3){
-							lista[i+j] = "hortelã";
-						}
-						else if(fatouche[i][j] == 4){
-							lista[i+j] = "cebola";
-						}
-						else if(fatouche[i][j] == 5){
-							lista[i+j] = "tomate";
-						}
-						else if(fatouche[i][j] == 6){
-							lista[i+j] = "pepino";
-						}
-						else if(fatouche[i][j] == 7){
-							lista[i+j] = "cebolinha";
-						}
-						else if(fatouche[i][j] == 8){
-							lista[i+j] = "limão";
-						}
-						else if(fatouche[i][j] == 9){
-							lista[i+j] = "azeite";
-						}
-						else if(fatouche[i][j] == 10){
-							lista[i+j] = "rabanete";
-						}
-						else if(fatouche[i][j] == 11){
-							lista[i+j] = "pepino japonês";
-						}
-						else if(fatouche[i][j] == 12){
-							lista[i+j] = "alface";
-						}
-						else if(fatouche[i][j] == 13){
-							lista[i+j] = "sal";
-						}
-						else if(fatouche[i][j] == 14){
-							lista[i+j] = "pimenta";
-						}
-						else if(fatouche[i][j] == 15){
-							lista[i+j] = "torradas";
-						}
-						else if(fatouche[i][j] == 16){
-							lista[i+j] = "carne de carneiro";
-						}
-						else if(fatouche[i][j] == 17){
-							lista[i+j] = "coalhada";
-						}
-						else if(fatouche[i][j] == 18){
-							lista[i+j] = "alho";
-						}
-						else if(fatouche[i][j] == 19){
-							lista[i+j] = "água";
-						}
-						else if(fatouche[i][j] == 20){
-							lista[i+j] = "arroz";
-						}
-						else if(fatouche[i][j] == 21){
-							lista[i+j] = "manteiga";
-						}
-						else if(fatouche[i][j] == 22){
-							lista[i+j] = "carne de patinho";
-						}
-						else if(fatouche[i][j] == 23){
-							lista[i+j] = "pimenta síria";
-						}
-					}
-				}
-			for(int i=0; i < lista.length; i++){
-				System.out.print(lista[i]);
-			}
-			break;
+				// alguma coisa/lógica para encher um vetor de Strings
+				break;
 			case 3:
-				for(int i = 0; i < 3; i++){
-					for(int j = 0; j < 7; i++){
-						if(arrozMarroquinoCarneiro[i][j] == 1){
-							lista[i+j] = "trigo para quibe";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 2){
-							lista[i+j] = "salsa";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 3){
-							lista[i+j] = "hortelã";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 4){
-							lista[i+j] = "cebola";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 5){
-							lista[i+j] = "tomate";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 6){
-							lista[i+j] = "pepino";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 7){
-							lista[i+j] = "cebolinha";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 8){
-							lista[i+j] = "limão";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 9){
-							lista[i+j] = "azeite";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 10){
-							lista[i+j] = "rabanete";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 11){
-							lista[i+j] = "pepino japonês";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 12){
-							lista[i+j] = "alface";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 13){
-							lista[i+j] = "sal";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 14){
-							lista[i+j] = "pimenta";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 15){
-							lista[i+j] = "torradas";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 16){
-							lista[i+j] = "carne de carneiro";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 17){
-							lista[i+j] = "coalhada";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 18){
-							lista[i+j] = "alho";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 19){
-							lista[i+j] = "água";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 20){
-							lista[i+j] = "arroz";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 21){
-							lista[i+j] = "manteiga";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 22){
-							lista[i+j] = "carne de patinho";
-						}
-						else if(arrozMarroquinoCarneiro[i][j] == 23){
-							lista[i+j] = "pimenta síria";
-						}
-					}
-				}
-			for(int i=0; i < lista.length; i++){
-				System.out.print(lista[i]);
-			}
-			break;
+				// alguma coisa/lógica para encher um vetor de Strings
+				break;
 		}
 	}
 }
