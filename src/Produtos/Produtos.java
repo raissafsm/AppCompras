@@ -2,6 +2,7 @@ package Produtos;
 
 public class Produtos {
 /* 
+ * NULO				= 0
  * trigo para quibe (triguilho)	= 1
  * folha de salsa		= 2
  * folha de hotelã		= 3
