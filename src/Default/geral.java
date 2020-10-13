@@ -1,4 +1,4 @@
-package App;
+package Default;
 
 import java.util.*;
 
@@ -36,7 +36,7 @@ public class geral {
 
         System.out.println("\n1 - Fazer cadastro");
         System.out.println("2 - Fazer login");
-        System.out.printf("\nDigite 1 ou 2 para a opção desejada: ");
+        System.out.printf("\nDigite 1 ou 2 para a op��o desejada: ");
         op1 = ler.nextInt();
         
         if(op1==1){
@@ -46,22 +46,29 @@ public class geral {
             email = ler.next();
             System.out.printf("Cadastre uma senha: ");
             senha = ler.next();
+            /*
+             * 	if(Objects.equals(senha, senha0))
+             * 
+             */
          //   System.out.println("\n Usuário logado!");
 
         }else if (op1==2){
-            System.out.printf( "\n Insira seu e-mail: ");
+            do {
+            	System.out.printf( "\n Insira seu e-mail: ");
             email = ler.next();
-                if(email!=emailCad) {
-                System.out.println("\nE-mail inválido!");
+                if(Objects.equals(email,emailCad)){
+                }else {
+                	System.out.println("\nE-mail inv�lido!");
                 }
 
-            System.out.println("Insira uma senha: ");
+            System.out.printf("Insira uma senha: ");
             senha = ler.next();
                 if(senha!=senhaCad){
-                    System.out.println("Senha inválida!");
+                    System.out.println("Senha inv�lida!");
                 }
 
-        System.out.println("\n Usuário logado!");
+            }while(email!=emailCad || senha!=senhaCad);
+        System.out.println("\n Usu�rio logado!");
         }
     
         System.out.println("Digite 1 para o prato do dia");
