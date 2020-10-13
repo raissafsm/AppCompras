@@ -8,7 +8,7 @@ public class Produtos {
 		{8, 9, 13, 14, 0, 0, 0}		//proteínas
 	};
 
-	public static int faouche[][] = {
+	public static int fatouche[][] = {
 		{15, 0, 0, 0, 0, 0, 0},		//carboidratos
 		{10, 5, 11, 4, 2, 3, 12},	//horaliças, legumes e verduras,
 		{9, 13, 14, 0, 0, 0, 0} 	//proteínas
@@ -105,73 +105,73 @@ public class Produtos {
 			case 2:
 				for(int i = 0; i < 3; i++){
 					for(int j = 0; j < 7; i++){
-						if(faouche[i][j] == 1){
+						if(fatouche[i][j] == 1){
 							lista[i+j] = "trigo para quibe";
 						}
-						else if(faouche[i][j] == 2){
+						else if(fatouche[i][j] == 2){
 							lista[i+j] = "salsa";
 						}
-						else if(faouche[i][j] == 3){
+						else if(fatouche[i][j] == 3){
 							lista[i+j] = "hortelã";
 						}
-						else if(faouche[i][j] == 4){
+						else if(fatouche[i][j] == 4){
 							lista[i+j] = "cebola";
 						}
-						else if(faouche[i][j] == 5){
+						else if(fatouche[i][j] == 5){
 							lista[i+j] = "tomate";
 						}
-						else if(faouche[i][j] == 6){
+						else if(fatouche[i][j] == 6){
 							lista[i+j] = "pepino";
 						}
-						else if(faouche[i][j] == 7){
+						else if(fatouche[i][j] == 7){
 							lista[i+j] = "cebolinha";
 						}
-						else if(faouche[i][j] == 8){
+						else if(fatouche[i][j] == 8){
 							lista[i+j] = "limão";
 						}
-						else if(faouche[i][j] == 9){
+						else if(fatouche[i][j] == 9){
 							lista[i+j] = "azeite";
 						}
-						else if(faouche[i][j] == 10){
+						else if(fatouche[i][j] == 10){
 							lista[i+j] = "rabanete";
 						}
-						else if(faouche[i][j] == 11){
+						else if(fatouche[i][j] == 11){
 							lista[i+j] = "pepino japonês";
 						}
-						else if(faouche[i][j] == 12){
+						else if(fatouche[i][j] == 12){
 							lista[i+j] = "alface";
 						}
-						else if(faouche[i][j] == 13){
+						else if(fatouche[i][j] == 13){
 							lista[i+j] = "sal";
 						}
-						else if(faouche[i][j] == 14){
+						else if(fatouche[i][j] == 14){
 							lista[i+j] = "pimenta";
 						}
-						else if(faouche[i][j] == 15){
+						else if(fatouche[i][j] == 15){
 							lista[i+j] = "torradas";
 						}
-						else if(faouche[i][j] == 16){
+						else if(fatouche[i][j] == 16){
 							lista[i+j] = "carne de carneiro";
 						}
-						else if(faouche[i][j] == 17){
+						else if(fatouche[i][j] == 17){
 							lista[i+j] = "coalhada";
 						}
-						else if(faouche[i][j] == 18){
+						else if(fatouche[i][j] == 18){
 							lista[i+j] = "alho";
 						}
-						else if(faouche[i][j] == 19){
+						else if(fatouche[i][j] == 19){
 							lista[i+j] = "água";
 						}
-						else if(faouche[i][j] == 20){
+						else if(fatouche[i][j] == 20){
 							lista[i+j] = "arroz";
 						}
-						else if(faouche[i][j] == 21){
+						else if(fatouche[i][j] == 21){
 							lista[i+j] = "manteiga";
 						}
-						else if(faouche[i][j] == 22){
+						else if(fatouche[i][j] == 22){
 							lista[i+j] = "carne de patinho";
 						}
-						else if(faouche[i][j] == 23){
+						else if(fatouche[i][j] == 23){
 							lista[i+j] = "pimenta síria";
 						}
 					}
