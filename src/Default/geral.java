@@ -10,7 +10,7 @@ public class geral {
         int resp1, resp2=0, cep1, op1;
         String usuario;
        
-        String email,senha,emailCad="generation@gmail.com",senhaCad="g1234";
+        String email="teste",senha="teste",emailCad="generation@gmail.com",senhaCad="g1234";
         
         String[][] tabule = {
     			{"trigo para quibe", "nulo", "nulo", "nulo", "nulo", "nulo", "nulo"}, 
@@ -53,22 +53,27 @@ public class geral {
          //   System.out.println("\n UsuÃ¡rio logado!");
 
         }else if (op1==2){
+		int cont = 0;
             do {
-            	System.out.printf( "\n Insira seu e-mail: ");
-            email = ler.next();
-                if(Objects.equals(email,emailCad)){
-                }else {
+
+                if(Objects.equals(email,emailCad) == false && cont >= 1){
                 	System.out.println("\nE-mail inválido!");
                 }
-
-            System.out.printf("Insira uma senha: ");
-            senha = ler.next();
-                if(senha!=senhaCad){
+                if(Objects.equals(senha,senhaCad) == false && cont >= 1){
                     System.out.println("Senha inválida!");
                 }
 
-            }while(email!=emailCad || senha!=senhaCad);
-        System.out.println("\n Usuário logado!");
+            	System.out.printf( "\nInsira seu e-mail: ");
+            	email = ler.next();
+
+            	System.out.printf("Insira uma senha: ");
+            	senha = ler.next();
+	    
+
+            	cont++;
+
+            }while(Objects.equals(email,emailCad) == false || Objects.equals(senha,senhaCad) == false);
+        System.out.println("\nUsuário logado!");
         }
     
         System.out.println("Digite 1 para o prato do dia");
